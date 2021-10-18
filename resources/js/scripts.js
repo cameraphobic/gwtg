@@ -26,3 +26,12 @@ document.addEventListener("DOMContentLoaded", function(){
     }) // forEach
   }); 
   // DOMContentLoaded  end
+
+  window.addEventListener("scroll", function(event) {
+  var scroll = this.scrollY;
+  if(scroll > 400) {
+    this.document.body.style.backgroundColor = "pink";
+  } else {
+    this.document.body.style.backgroundColor = "white";
+  }
+});
